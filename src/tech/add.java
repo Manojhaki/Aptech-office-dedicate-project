@@ -1,6 +1,6 @@
 package tech;
 
-import com.mysql.jdbc.PreparedStatement;
+import com.mysql.jdbc.PreparedStatement;// a statement prepared to make a connection
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import net.proteanit.sql.DbUtils;
@@ -22,7 +22,7 @@ connect cn=new connect();
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
+// Declaration of all the objects used in the program
         buttonGroup1 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -48,9 +48,10 @@ connect cn=new connect();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
+        // addition of the onclose application
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-
+        // Setting a proper boundry and font
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Register New Student's Info");
         getContentPane().add(jLabel1);
