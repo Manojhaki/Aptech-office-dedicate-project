@@ -1,5 +1,5 @@
 
- 
+ package tech;
 
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.ResultSet;
@@ -33,17 +33,16 @@ connect cn=new connect();
         getContentPane().add(user);
         user.setBounds(240, 130, 226, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\Shield.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/password_icon.png"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(130, 200, 74, 73);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\Login.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/Login.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(130, 110, 83, 62);
 
-        login.setFont(new java.awt.Font("Tahoma", 1, 24));
+        login.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         login.setText("LogIn");
-        login.setOpaque(false);
         login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginActionPerformed(evt);
@@ -54,7 +53,7 @@ connect cn=new connect();
         getContentPane().add(password);
         password.setBounds(240, 220, 220, 29);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\1024x768_satiny_bloom.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/login.jpg"))); // NOI18N
         getContentPane().add(jLabel3);
         jLabel3.setBounds(0, 0, 1020, 530);
 

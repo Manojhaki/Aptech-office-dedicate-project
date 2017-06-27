@@ -1,6 +1,6 @@
 
  
-
+package tech;
 public class help extends javax.swing.JFrame {
 
     public help() {
@@ -27,9 +27,9 @@ public class help extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(20, 10, 110, 23);
+        jButton1.setBounds(20, 10, 110, 29);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\1280x960_monsters_inc_3d_graphics_cartoons.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/helpme.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 980, 510);
 

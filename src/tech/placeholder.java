@@ -1,5 +1,5 @@
 
- 
+ package tech;
 import java.awt.Color;
 import javax.swing.JTextField;
 

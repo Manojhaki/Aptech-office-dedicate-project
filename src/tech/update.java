@@ -1,6 +1,6 @@
 
  
-
+package tech;
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -51,36 +51,36 @@ connect cn=new connect();
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Update Student's Info ");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(356, 11, 229, 39);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("ID :");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(11, 69, 42, 27);
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Address :");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(11, 178, 67, 27);
         getContentPane().add(id);
-        id.setBounds(71, 74, 114, 20);
+        id.setBounds(71, 74, 114, 26);
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("Contact :");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(11, 211, 67, 26);
         getContentPane().add(address);
-        address.setBounds(88, 183, 265, 20);
+        address.setBounds(88, 183, 265, 26);
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Name :");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(11, 102, 56, 27);
         getContentPane().add(name);
-        name.setBounds(71, 107, 226, 20);
+        name.setBounds(71, 107, 226, 26);
 
         buttonGroup1.add(male);
         male.setText("Male");
@@ -92,9 +92,9 @@ connect cn=new connect();
         getContentPane().add(male);
         male.setBounds(165, 144, 70, 23);
         getContentPane().add(contact);
-        contact.setBounds(92, 216, 143, 20);
+        contact.setBounds(92, 216, 143, 26);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Gender :");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(11, 140, 56, 27);
@@ -109,7 +109,7 @@ connect cn=new connect();
         getContentPane().add(female);
         female.setBounds(88, 144, 70, 23);
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Date of Join :");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(11, 243, 82, 26);
@@ -120,7 +120,7 @@ connect cn=new connect();
             }
         });
         getContentPane().add(date);
-        date.setBounds(97, 248, 143, 20);
+        date.setBounds(97, 248, 143, 26);
 
         maincourse.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -133,9 +133,9 @@ connect cn=new connect();
             }
         });
         getContentPane().add(maincourse);
-        maincourse.setBounds(141, 285, 224, 20);
+        maincourse.setBounds(141, 285, 224, 27);
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setText("Courses Of Study :");
         getContentPane().add(jLabel12);
         jLabel12.setBounds(10, 280, 127, 26);
@@ -172,7 +172,7 @@ connect cn=new connect();
             }
         });
         getContentPane().add(sub);
-        sub.setBounds(383, 285, 202, 20);
+        sub.setBounds(383, 285, 202, 27);
 
         Update.setText("Update");
         Update.addActionListener(new java.awt.event.ActionListener() {
@@ -181,7 +181,7 @@ connect cn=new connect();
             }
         });
         getContentPane().add(Update);
-        Update.setBounds(550, 340, 203, 23);
+        Update.setBounds(550, 340, 203, 29);
 
         search.setText("Search");
         search.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +190,7 @@ connect cn=new connect();
             }
         });
         getContentPane().add(search);
-        search.setBounds(195, 73, 90, 23);
+        search.setBounds(195, 73, 90, 29);
 
         jButton1.setText("HOME");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +201,7 @@ connect cn=new connect();
         getContentPane().add(jButton1);
         jButton1.setBounds(840, 60, 130, 60);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\i_love_music_2-wallpaper-2560x1600.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/main.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 1140, 530);
 

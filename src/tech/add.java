@@ -1,5 +1,4 @@
-
- 
+package tech;
 
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.ResultSet;
@@ -46,12 +45,13 @@ connect cn=new connect();
         jLabel5 = new javax.swing.JLabel();
         sub = new javax.swing.JComboBox();
         jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Register New Student's Info");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(404, 20, 229, 39);
@@ -97,7 +97,7 @@ connect cn=new connect();
         getContentPane().add(male);
         male.setBounds(200, 140, 80, 23);
         getContentPane().add(contact);
-        contact.setBounds(91, 212, 143, 20);
+        contact.setBounds(91, 212, 143, 26);
 
         date.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -105,45 +105,44 @@ connect cn=new connect();
             }
         });
         getContentPane().add(date);
-        date.setBounds(102, 244, 143, 20);
+        date.setBounds(102, 244, 143, 26);
         getContentPane().add(name);
-        name.setBounds(70, 103, 226, 20);
+        name.setBounds(70, 103, 226, 26);
         getContentPane().add(address);
-        address.setBounds(87, 179, 265, 20);
+        address.setBounds(87, 179, 265, 26);
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Name :");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(10, 98, 56, 27);
         getContentPane().add(id);
-        id.setBounds(70, 70, 114, 20);
+        id.setBounds(70, 70, 114, 26);
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("Contact :");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(10, 207, 67, 26);
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Address :");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(10, 174, 67, 27);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Gender :");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(10, 136, 56, 27);
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setText("Courses Of Study :");
         getContentPane().add(jLabel12);
         jLabel12.setBounds(10, 271, 127, 26);
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Date of Join :");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(10, 239, 82, 26);
 
-        maincourse.setOpaque(false);
         maincourse.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 maincourseItemStateChanged(evt);
@@ -155,7 +154,7 @@ connect cn=new connect();
             }
         });
         getContentPane().add(maincourse);
-        maincourse.setBounds(128, 276, 224, 20);
+        maincourse.setBounds(128, 276, 224, 27);
 
         jButton2.setText("Add This Student");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -166,12 +165,11 @@ connect cn=new connect();
         getContentPane().add(jButton2);
         jButton2.setBounds(720, 310, 266, 32);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("ID :");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(10, 65, 42, 27);
 
-        sub.setOpaque(false);
         sub.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 subItemStateChanged(evt);
@@ -183,7 +181,7 @@ connect cn=new connect();
             }
         });
         getContentPane().add(sub);
-        sub.setBounds(370, 276, 314, 20);
+        sub.setBounds(370, 276, 314, 27);
 
         jButton1.setText("HOME");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -194,9 +192,11 @@ connect cn=new connect();
         getContentPane().add(jButton1);
         jButton1.setBounds(840, 60, 130, 60);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\i_love_music_2-wallpaper-2560x1600.jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/main.jpg"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 1270, 500);
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 1270, 500);
+        jLabel2.setBounds(0, 0, 1280, 510);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -259,7 +259,7 @@ catch(Exception e)
     }
     catch(Exception e)
     {
-        JOptionPane.showMessageDialog(rootPane, e);
+        JOptionPane.showMessageDialog(rootPane, "king3");
     } 
    
    
@@ -285,7 +285,7 @@ catch(Exception e)
 }
    catch (Exception e)
    {
-       JOptionPane.showMessageDialog(null,e);
+       JOptionPane.showMessageDialog(null,"king2");
    }
     }//GEN-LAST:event_subItemStateChanged
 
@@ -306,7 +306,7 @@ private void fillmaincourse()
     }
     catch(Exception e)
     {
-        JOptionPane.showMessageDialog(rootPane, e);
+        JOptionPane.showMessageDialog(rootPane, "king");
     }
 }
     public static void main(String args[]) {
@@ -330,6 +330,7 @@ private void fillmaincourse()
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

@@ -1,4 +1,4 @@
-
+package tech;
  
 
 import com.mysql.jdbc.PreparedStatement;
@@ -29,13 +29,13 @@ ResultSet  r ;
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        o.setFont(new java.awt.Font("Tahoma", 1, 18));
+        o.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         o.setForeground(new java.awt.Color(255, 255, 255));
         o.setText("ID  :");
         getContentPane().add(o);
         o.setBounds(10, 120, 60, 30);
         getContentPane().add(input);
-        input.setBounds(80, 130, 249, 20);
+        input.setBounds(80, 130, 249, 26);
 
         delete.setText("Delete");
         delete.addActionListener(new java.awt.event.ActionListener() {
@@ -44,7 +44,7 @@ ResultSet  r ;
             }
         });
         getContentPane().add(delete);
-        delete.setBounds(150, 170, 100, 23);
+        delete.setBounds(150, 170, 100, 29);
 
         jButton1.setText("HOME");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -55,7 +55,7 @@ ResultSet  r ;
         getContentPane().add(jButton1);
         jButton1.setBounds(240, 40, 130, 60);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\1280x960_find_your_icon.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/delete.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 400, 300);
 

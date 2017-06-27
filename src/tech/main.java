@@ -1,6 +1,7 @@
-
+package tech;
  
 
+import tech.add;
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
@@ -57,20 +58,19 @@ private void holder()
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("Courses Of Study :");
         getContentPane().add(jLabel10);
         jLabel10.setBounds(34, 573, 125, 26);
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Date of Join :");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(34, 541, 82, 26);
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 14));
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\up.png")); // NOI18N
+        jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/update_icon.png"))); // NOI18N
         jButton4.setText("Update");
-        jButton4.setOpaque(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -79,10 +79,9 @@ private void holder()
         getContentPane().add(jButton4);
         jButton4.setBounds(980, 200, 306, 140);
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\delete.png")); // NOI18N
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/delete_icon.png"))); // NOI18N
         jButton3.setText("Delete");
-        jButton3.setOpaque(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -91,10 +90,9 @@ private void holder()
         getContentPane().add(jButton3);
         jButton3.setBounds(976, 540, 310, 143);
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\help.png")); // NOI18N
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/help_icon.png"))); // NOI18N
         jButton2.setText("Help");
-        jButton2.setOpaque(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -103,7 +101,7 @@ private void holder()
         getContentPane().add(jButton2);
         jButton2.setBounds(980, 360, 310, 156);
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("Address :");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(34, 476, 58, 27);
@@ -137,30 +135,29 @@ private void holder()
         getContentPane().add(jScrollPane2);
         jScrollPane2.setBounds(34, 106, 820, 159);
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("Contact :");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(34, 509, 58, 26);
+        jLabel8.setBounds(34, 509, 56, 26);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("WELCOME");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(21, 11, 105, 39);
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("ID :");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(34, 367, 41, 27);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("Gender :");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(34, 438, 58, 27);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\user.png")); // NOI18N
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/add_icon.png"))); // NOI18N
         jButton1.setText("Add New");
-        jButton1.setOpaque(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -169,12 +166,12 @@ private void holder()
         getContentPane().add(jButton1);
         jButton1.setBounds(980, 20, 306, 150);
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 2, 18));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jLabel3.setText("Student's Information");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(375, 278, 193, 42);
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel4.setText("Name :");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(34, 400, 56, 27);
@@ -202,15 +199,15 @@ private void holder()
         getContentPane().add(input);
         input.setBounds(34, 61, 820, 34);
         getContentPane().add(id);
-        id.setBounds(79, 372, 89, 20);
+        id.setBounds(79, 372, 89, 26);
         getContentPane().add(name);
-        name.setBounds(94, 405, 221, 20);
+        name.setBounds(94, 405, 221, 26);
         getContentPane().add(address);
-        address.setBounds(96, 481, 219, 20);
+        address.setBounds(96, 481, 219, 26);
         getContentPane().add(contact);
-        contact.setBounds(96, 514, 157, 20);
+        contact.setBounds(96, 514, 157, 26);
         getContentPane().add(gender);
-        gender.setBounds(96, 443, 104, 20);
+        gender.setBounds(96, 443, 104, 26);
 
         course.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,7 +215,7 @@ private void holder()
             }
         });
         getContentPane().add(course);
-        course.setBounds(163, 578, 369, 20);
+        course.setBounds(163, 578, 369, 26);
 
         date.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,9 +223,9 @@ private void holder()
             }
         });
         getContentPane().add(date);
-        date.setBounds(120, 546, 162, 20);
+        date.setBounds(120, 546, 162, 26);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\java\\tech\\src\\i_love_music_2-wallpaper-2560x1600.jpg")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resource/main.jpg"))); // NOI18N
         getContentPane().add(jLabel11);
         jLabel11.setBounds(0, -10, 1390, 710);
 
